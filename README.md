@@ -1,6 +1,6 @@
 # memer_app
 
-A simple Flutter project.
+A simple new Flutter project.
 
 # Working on...🧑‍🏭👷👷‍♂️
 
