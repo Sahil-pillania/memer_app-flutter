@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:flutter/widgets.dart";
 import "package:google_fonts/google_fonts.dart";
 import "package:memer_app/themes.dart";
 import "package:memer_app/views/home_view.dart";
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: MyTheme.darkColorScheme,
         fontFamily: GoogleFonts.dmSans().fontFamily,
       ),
+      themeMode:ThemeMode.system,
       home: HomeView(),
     );
   }
