@@ -1,5 +1,4 @@
 import "dart:convert";
-
 import "package:http/http.dart" as http;
 import "package:memer_app/model/memes_response.dart";
 
@@ -11,7 +10,8 @@ abstract class API {
 
     if (response.statusCode == 200) {
       // parse the Json
-      final MemeResponse memeResponse = MemeResponse.fromJson(jsonDecode(response.body));
+      final MemeResponse memeResponse =
+          MemeResponse.fromJson(jsonDecode(response.body));
       return memeResponse;
     } else {
       throw Exception("Failed to load memes");
